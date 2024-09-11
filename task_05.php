@@ -1,10 +1,11 @@
 <?php
-$name = 'haramoeno';
-if ($name ='haramoeno') {
+$name = 'ogawa';
+if ($name == 'haramoeno') {
     echo '私はharamoenoです';
 } else {
     echo 'haramoenoではありません';
 }
+echo "\n";
 
 
 
@@ -17,6 +18,6 @@ echo $total;
 
 
 $fruits = array("apple", "banana", "orange", "strawberry", "grape");
-foreach($fruits as $fruits) {
-    echo $fruits;
+foreach($fruits as $fruit) {
+    echo $fruit;
 }
