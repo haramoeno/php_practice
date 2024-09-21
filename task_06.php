@@ -33,8 +33,8 @@ function mul($arr) {
     // $result = mul($arr);// ✕関数から抜け出せない非常に危険な処理
 
     // その要素をすべてかけた結果を返す
-    $result = 0;// 結果として $result という変数を用意する
-    for ($i = 0; $i < count($arr); $i++) {
+    $result = 1;// 結果として $result という変数を用意する
+    for ($i = 0; $i < count($arr) ; $i++) {
         echo "要素は" . $arr[$i];
         echo "\n";
         
