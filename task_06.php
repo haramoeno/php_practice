@@ -4,7 +4,7 @@ function test($num) {
     return $num * 2;
 }
 echo test(3);
-
+echo "\n";
 
 // 課題２
 function add($a, $b) {
@@ -12,6 +12,7 @@ function add($a, $b) {
     
 }
 echo add(8, 10);
+echo "\n";
 
 // 課題３
 // function sum($arr){
@@ -35,13 +36,25 @@ function mul($arr) {
     // その要素をすべてかけた結果を返す
     $result = 1;// 結果として $result という変数を用意する
     for ($i = 0; $i < count($arr) ; $i++) {
-        echo "要素は" . $arr[$i];
+        echo "変数 \$arr の". $i . "番目の要素は" . $arr[$i];
         echo "\n";
         
-    $result = $arr[0] * $arr[1] * $arr[2] * $arr[3] * $arr[4];
+        $result = $result * $arr[$i];
+        
         
     }
-return $result;// $result に入っている値を返す
+    return $result;// $result に入っている値を返す
 }
 echo mul([1, 3, 5, 7, 9]);
 //       ^^^^^^^^^^^^^^^ 配列 array(1, 3, 5 ,7, 9) を引数として渡す
+
+echo "\n";
+echo "\n";
+
+echo mul([1, 3, 5]);
+echo "\n";
+echo "\n";
+
+echo mul([1, 3, 5, 7, 9, 11]);
+echo "\n";
+echo "\n";
